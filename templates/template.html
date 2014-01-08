@@ -1,0 +1,20 @@
+<!-- Reply c/o University of Hannover, pHR4uNh0F3R Germany, 11172-3 -->
+
+<html>
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <noscript>
+            <p>
+                <strong>Note:</strong> Since your browser does not support JavaScript, you must press the Resume button once to proceed.
+            </p>
+        </noscript>
+        <p style="display: none;" class="data">{{ data }}</p>
+        <img style="position: fixed; top: 50%; left: 50%; margin-top: -{{ top }}px; margin-left: -{{ left }}px;" src="{{ edison_url }}" />
+        <form method="post" action="/next">
+            <input type="hidden" class="nextState" name="nextState" value="{{ relay_state }}"/>
+            <noscript><input type="submit" value="Resume"/></noscript>
+        </form>
+    </body>
+</html>
